@@ -1,7 +1,7 @@
-import React from 'react'
+import './categories.styles.scss'
 
-const CategoryItem = ({ categpry }) => {
-  const { imageUrl, title } = categpry
+const CategoryItem = ({ category }) => {
+  const { imageUrl, title } = category
   return (
     <div className='category-container'>
       <div

@@ -1,4 +1,3 @@
-import './categories.styles.scss'
 import CategoryItem from './components/category-item/CategoryItem'
 
 const App = () => {
@@ -32,8 +31,8 @@ const App = () => {
 
   return (
     <div className='categories-container'>
-      {categories.map(({ title, id, imageUrl }) => (
-        <CategoryItem />
+      {categories.map((category) => (
+        <CategoryItem key={category.id} category={category} />
       ))}
     </div>
   )
