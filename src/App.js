@@ -1,3 +1,4 @@
+import './categories.styles.scss'
 import CategoryItem from './components/category-item/CategoryItem'
 
 const App = () => {
